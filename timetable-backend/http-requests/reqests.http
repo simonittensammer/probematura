@@ -25,3 +25,8 @@ Content-Type: application/json
 }
 
 ###
+
+DELETE http://localhost:8080/api/unit/1002
+Accept: application/json
+
+###

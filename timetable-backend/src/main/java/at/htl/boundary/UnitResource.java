@@ -58,4 +58,17 @@ public class UnitResource {
         ur.persist(unit);
         return Response.ok(unit).build();
     }
+
+    @DELETE
+    @Path("/{id}")
+    public Response deleteById(@PathParam("id") Long id) {
+        Unit unit = ur.findById(id);
+
+        if (unit == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        ur.deleteById(id);
+        return Response.noContent().build();
+    }
 }
