@@ -20,4 +20,15 @@ public class Unit extends PanacheEntityBase {
 
     @ManyToOne
     public Schoolclass schoolClass;
+
+    public Unit() {
+    }
+
+    public Unit(Long day, Long unit, String subject, Teacher teacher, Schoolclass schoolClass) {
+        this.day = day;
+        this.unit = unit;
+        this.subject = subject;
+        this.teacher = teacher;
+        this.schoolClass = schoolClass;
+    }
 }

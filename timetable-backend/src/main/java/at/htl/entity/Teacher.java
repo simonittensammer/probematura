@@ -5,7 +5,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import javax.persistence.*;
 
 @Entity
-@SequenceGenerator(name = "teacherSeq", sequenceName = "TEACHER_SEQ", initialValue = 1000)
+@SequenceGenerator(name = "teacherSeq", sequenceName = "TEACHER_SEQ", initialValue = 1006)
 public class Teacher extends PanacheEntityBase {
 
     @Id
