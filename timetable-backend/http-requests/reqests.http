@@ -3,7 +3,25 @@ Accept: application/json
 
 ###
 
+GET http://localhost:8080/api/class
+Accept: application/json
+
+###
+
 GET http://localhost:8080/api/unit/class/5BHITM
 Accept: application/json
+
+###
+
+POST http://localhost:8080/api/unit
+Content-Type: application/json
+
+{
+  "day": 2,
+  "unit": 3,
+  "subject": "MEDT",
+  "teacherId": 1003,
+  "schoolclassId": "5BHITM"
+}
 
 ###
