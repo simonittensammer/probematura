@@ -1,0 +1,9 @@
+GET http://localhost:8080/api/teacher
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/unit/class/5BHITM
+Accept: application/json
+
+###
